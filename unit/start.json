@@ -1,0 +1,15 @@
+{
+    "listeners": {
+        "*:80": {
+            "application": "ci"
+        }
+    },
+    "applications": {
+        "ci": {
+            "type": "php",
+            "processes": 50,
+            "root": "/var/www/html",
+            "index": "index.php"
+        }
+    }
+}
